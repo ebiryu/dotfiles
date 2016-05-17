@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/ebihara/Works/SurfaceEvolver/lips/doublet/doublet/run'
-let g:netrw_dirhist_2='/Users/ebihara/Works/SurfaceEvolver/lips/doublet/doublet/run/0.7'
-let g:netrw_dirhist_3='/Users/ebihara/.ssh'

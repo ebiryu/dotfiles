@@ -196,3 +196,6 @@ eval "$(pyenv init -)"
   eval "$(rbenv init -)"
 
 
+# brew doctor の warning を消す
+alias brew="env PATH=${PATH//\/Users\/ebihara\/\.pyenv\/shims:/} brew"
+
