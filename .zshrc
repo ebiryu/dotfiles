@@ -199,3 +199,11 @@ eval "$(pyenv init -)"
 # brew doctor の warning を消す
 alias brew="env PATH=${PATH//\/Users\/ebihara\/\.pyenv\/shims:/} brew"
 
+
+# matplotlibのlocale error 対処
+export LC_ALL='ja_JP.UTF-8'
+
+
+# hakyll-init
+export PATH=${HOME}/.local/bin:${PATH}
+
