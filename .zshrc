@@ -211,3 +211,14 @@ export LC_ALL='ja_JP.UTF-8'
 . ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 
+# brew doctor の warning を消す
+alias brew="env PATH=${PATH//\/Users\/ebihara\/\.pyenv\/shims:/} brew"
+
+
+# matplotlibのlocale error 対処
+export LC_ALL='ja_JP.UTF-8'
+
+
+# hakyll-init
+export PATH=${HOME}/.local/bin:${PATH}
+

@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/ebibi/work/lab-hp/new-lab-hp/source/_layouts'
-let g:netrw_dirhist_2='/Users/ebibi/OneDrive/works/del_a_ini'
-let g:netrw_dirhist_3='/Users/ebibi/research/SurfaceEvolver/volume_ratio/w20/ratio0.4/v2_0.50/dec1_1'
-let g:netrw_dirhist_4='/Users/ebibi/research/SurfaceEvolver/is_true_gamma/w20/ratio1.0/onCluster_t'
