@@ -1,6 +1,8 @@
 # zsh で chown を使用可能に
 export PATH="$PATH:/usr/sbin"
 
+# usr/local/bin
+export PATH="$PATH:/usr/local/bin"
 
 # 少し凝った zshrc
 # License : MIT
@@ -38,6 +40,14 @@ select-word-style default
 # / も区切りと扱うので、^W でディレクトリ１つ分を削除できる
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
+
+
+#git-completion
+fpath=(~/.zsh/completion $fpath)
+
+autoload -U compinit
+compinit -u
+
 
 ########################################
 # 補完
@@ -194,5 +204,10 @@ eval "$(pyenv init -)"
 [[ -d ~/.rbenv  ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
+
+# powerline
+export PATH=$PATH:$HOME/.local/bin
+export LC_ALL='ja_JP.UTF-8'
+. ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 
