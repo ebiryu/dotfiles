@@ -206,9 +206,9 @@ eval "$(pyenv init -)"
   eval "$(rbenv init -)"
 
 # powerline
-export PATH=$PATH:$HOME/.local/bin
-export LC_ALL='ja_JP.UTF-8'
-. ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# export PATH=$PATH:$HOME/.local/bin
+# export LC_ALL='ja_JP.UTF-8'
+# . ~/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 
 # brew doctor の warning を消す
@@ -222,3 +222,19 @@ export LC_ALL='ja_JP.UTF-8'
 # hakyll-init
 export PATH=${HOME}/.local/bin:${PATH}
 
+# nodenv init
+export PATH=${HOME}/.nodenv/shims:${PATH}
+eval "$(nodenv init -)"
+
+# flutter
+export PATH=$PATH:/Users/ebibi/work/sdk/flutter/bin
+
+# deno
+export PATH="/Users/ebibi/.deno/bin:$PATH"
+
+
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export ANDROID_SDK_ROOT="/Users/ebibi/Library/Android/sdk"
+
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
