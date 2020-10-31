@@ -131,3 +131,5 @@ export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
 
 source $HOME/Library/Preferences/org.dystroy.broot/launcher/bash/br
+
+export PATH=$HOME/.cargo/bin:$PATH
