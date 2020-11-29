@@ -43,7 +43,7 @@ autoload -Uz compinit && compinit
 export PATH=$PATH:$HOME/.pub-cache/bin
 
 # flutter path
-export PATH=$PATH:~/work/sdk/flutter/bin
+export PATH=$PATH:~/works/sdk/flutter/bin
 
 #
 # Installation:
@@ -133,7 +133,7 @@ export PATH=${HOME}/.nodenv/shims:${PATH}
 eval "$(nodenv init -)"
 
 # deno
-export PATH="/Users/ebibi/.deno/bin:$PATH"
+export PATH="$HOME.deno/bin:$PATH"
 
 export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
