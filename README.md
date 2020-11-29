@@ -17,10 +17,3 @@ sh setup.sh
   ```
   brew tap homebrew/command-not-found
   ```
-
-- broot
-  ```
-  brew install broot
-  broot
-  ```
-  remove lines automatically added the end of `.zshrc`

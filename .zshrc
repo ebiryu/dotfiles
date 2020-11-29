@@ -31,6 +31,8 @@ zinit load zdharma/history-search-multi-word
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
+zinit pack for fzf
+
 
 alias pys='python -m SimpleHTTPServer'
 
@@ -136,6 +138,6 @@ export PATH="/Users/ebibi/.deno/bin:$PATH"
 export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
 
-source $HOME/Library/Preferences/org.dystroy.broot/launcher/bash/br
-
 export PATH=$HOME/.cargo/bin:$PATH
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
