@@ -1,6 +1,14 @@
 autoload bashcompinit
 bashcompinit
 
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_reduce_blanks
+setopt share_history
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
@@ -117,8 +125,7 @@ autoload -Uz zmv
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
-eval "$(pyenv init -)"
-
+eval "$(pyenv init --path)"
 
 # rbenv
 [[ -d ~/.rbenv  ]] && \
@@ -138,6 +145,24 @@ export PATH="$HOME.deno/bin:$PATH"
 export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
 
+# go
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin
+
+function peco-src () {
+  local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-src
+bindkey '^]' peco-src
+
+# rust
 export PATH=$HOME/.cargo/bin:$PATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias gcl="sh ~/dotfiles/zsh/gcl.zsh"
