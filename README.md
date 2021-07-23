@@ -6,10 +6,15 @@ cd dotfiles
 sh setup.sh
 ```
 
-## brew list
+## brew setup
 
-- homebrew
-  - https://brew.sh/
+- Homebrew
+  - https://brew.sh/ からインストール
+- Homebrew Bundle
+  - `dotfiles` で以下を実行
+    ```
+    brew bundle
+    ```
 - command-not-found
   ```
   brew tap homebrew/command-not-found
