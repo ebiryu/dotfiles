@@ -9,10 +9,7 @@ sh setup.sh
 ## brew list
 
 - homebrew
-  ```
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  ```
-
+  - https://brew.sh/
 - command-not-found
   ```
   brew tap homebrew/command-not-found
