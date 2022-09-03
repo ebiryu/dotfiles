@@ -5,3 +5,5 @@ for file in .??*; do
   [ "$file" = ".git" ] && continue
   ln -snfv ~/dotfiles/"$file" ~/
 done
+
+ln -snfv ~/dotfiles/Brewfile ~/
