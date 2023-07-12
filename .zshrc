@@ -24,23 +24,10 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
-
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-zinit light-mode for \
-    zdharma-continuum/zinit-annex-rust \
-    zdharma-continuum/zinit-annex-patch-dl
-
 ### End of Zinit's installer chunk
 
 zinit light zsh-users/zsh-autosuggestions
-zinit light zdharma/fast-syntax-highlighting
-zinit load zdharma/history-search-multi-word
-
-zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
-zinit light sindresorhus/pure
-
-zinit pack for fzf
+zinit light zdharma-continuum/fast-syntax-highlighting
 
 alias pys='python -m SimpleHTTPServer'
 
@@ -169,3 +156,6 @@ alias gcl="sh ~/dotfiles/zsh/gcl.zsh"
 
 # for direnv
 eval "$(direnv hook zsh)"
+
+# starship
+eval "$(starship init zsh)"
