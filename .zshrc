@@ -2,8 +2,11 @@
 export PATH=$PATH:/opt/homebrew/bin
 
 export LC_ALL=ja_JP.UTF-8
-autoload bashcompinit
-bashcompinit
+
+# for auto-complete
+fpath+="/opt/homebrew/share/zsh/site-functions"
+autoload -Uz compinit
+compinit
 
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
@@ -39,15 +42,7 @@ zinit light sindresorhus/pure
 
 zinit pack for fzf
 
-# for auto-complete
-fpath+="/opt/homebrew/share/zsh/site-functions"
-autoload -Uz compinit
-compinit
-
 alias pys='python -m SimpleHTTPServer'
-
-# git auto-complete
-autoload -Uz compinit && compinit
 
 # pub global path
 export PATH=$PATH:$HOME/.pub-cache/bin
