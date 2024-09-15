@@ -35,7 +35,7 @@ alias pys='python -m SimpleHTTPServer'
 export PATH=$PATH:$HOME/.pub-cache/bin
 
 # flutter path
-export PATH=$PATH:~/works/sdk/flutter/bin
+export PATH=$HOME/works/sdk/flutter/bin:$PATH
 
 #
 # Installation:
