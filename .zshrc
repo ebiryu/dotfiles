@@ -127,10 +127,10 @@ export PATH=${HOME}/.local/bin:${PATH}
 eval "$(fnm env --use-on-cd)"
 
 # deno
-export PATH="$HOME.deno/bin:$PATH"
+export PATH="$HOME/.deno/bin:$PATH"
 
 export ANDROID_SDK_ROOT=${HOME}/Library/Android/sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools
 
 # go
 export GOPATH=$(go env GOPATH)
